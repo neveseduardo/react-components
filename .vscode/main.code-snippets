@@ -1,0 +1,9 @@
+{
+    "g-button": {
+        "prefix": ["g-button", "button", "gbtn"],
+        "body": [
+			"<GButton>$1</GButton>",
+		],
+        "description": "Adiciona um botão react components" 
+    },
+}
