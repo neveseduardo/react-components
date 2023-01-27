@@ -1,5 +1,9 @@
-import { PropsWithChildren } from 'react';
+import React from 'react';
 
-const GButton = (props: PropsWithChildren) => (<button className="g-button">{ props.children }</button>);
+interface GButtonProps {
+    children: React.ReactNode,
+}
+
+const GButton = (props: GButtonProps) => (<button className="g-button">{ props.children }</button>);
 
 export default GButton;
