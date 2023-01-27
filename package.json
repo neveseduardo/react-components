@@ -33,9 +33,11 @@
     "lint": "eslint 'src/**/*.{jsx,ts,tsx}' --fix ",
     "theme": "sass src/assets/sass/app.scss dist/theme/app.css --style compressed",
     "prebuild": "rimraf ./dist",
-    "postbuild": "npm run theme"
+    "postbuild": "npm run theme",
+    "build:mixins": "vite build --config vite.mixins.config.js"
   },
   "dependencies": {
+    "date-fns": "^2.29.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
