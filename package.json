@@ -1,0 +1,59 @@
+{
+  "name": "react-components",
+  "version": "1.0.0",
+  "author": {
+    "name": "Eduardo",
+    "email": "neveseduardoti@gamil.com",
+    "url": "https://github.com/neveseduardo"
+  },
+  "description": "Projeto criado para alocar components react reutilizáveis para o reaproveitamento em multiplos projetos",
+  "private": true,
+  "license": "UNLICENSED",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/react-components.cjs.js",
+  "sideEffects": false,
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gihub.com/neveseduardo/react-components.git"
+  },
+  "bugs": {
+    "url": "https://github.com/neveseduardo/react-components/issues"
+  },
+  "homepage": "https://github.com/neveseduardo/react-components#readme",
+  "keywords": [
+    "react-components"
+  ],
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "lint": "eslint 'src/**/*.{jsx,ts,tsx}' --fix ",
+    "theme": "sass src/assets/sass/app.scss dist/theme/app.css --style compressed",
+    "prebuild": "rimraf ./dist",
+    "postbuild": "npm run theme"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.18",
+    "@types/react": "^18.0.26",
+    "@types/react-dom": "^18.0.9",
+    "@typescript-eslint/eslint-plugin": "^5.49.0",
+    "@typescript-eslint/parser": "^5.49.0",
+    "@vitejs/plugin-react": "^3.0.0",
+    "eslint": "^8.32.0",
+    "eslint-plugin-react": "^7.32.1",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-simple-import-sort": "^9.0.0",
+    "react-hooks": "^1.0.1",
+    "rimraf": "^4.1.2",
+    "sass": "^1.57.1",
+    "typescript": "^4.9.3",
+    "vite": "^4.0.0"
+  }
+}

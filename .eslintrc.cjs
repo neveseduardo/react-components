@@ -1,0 +1,85 @@
+module.exports = {
+	'env': {
+		'browser': true,
+		'es2021': true,
+		'node': true,
+	},
+	'extends': [
+		'eslint:recommended',
+		'plugin:react/recommended',
+		'plugin:@typescript-eslint/recommended'
+	],
+	'overrides': [
+	],
+	'parser': '@typescript-eslint/parser',
+	'parserOptions': {
+		'ecmaVersion': 'latest',
+		'sourceType': 'module'
+	},
+	'plugins': [
+		'react',
+		'@typescript-eslint',
+		'react-hooks',
+		'simple-import-sort'
+	],
+	'settings': {
+		'react': {
+		  'version': 'detect'
+		}
+	},
+	'rules': {
+		'camelcase': 'error',
+		'no-duplicate-imports': 'error',
+		'@typescript-eslint/ban-ts-comment': 'off',
+		'@typescript-eslint/no-explicit-any': 'off',
+		'react/react-in-jsx-scope': 'off',
+		'no-alert': 'error',
+		'react-hooks/exhaustive-deps': 'off',
+		'react/prop-types': 0,
+		'react/display-name': 0,
+		'simple-import-sort/imports': 'error',
+		'simple-import-sort/exports': 'error',
+		'@typescript-eslint/no-empty-function': 'off',
+		'react/no-unknown-property': 'off',
+		'react/no-unescaped-entities ': 'off',
+		'linebreak-style': [ 'error', 'unix' ],
+		'quotes': [ 'error', 'single' ],
+		'semi': ['error', 'always'],
+		'quote-props': 'off',
+		'no-constant-binary-expression': 'off',
+		'no-tabs': ['error', { 'allowIndentationTabs': true }],
+		'indent': ['error', 'tab', { 'SwitchCase': 1, 'ignoredNodes': ['ConditionalExpression'] }],
+		'no-var': 'error',
+		'no-unused-vars': 'off',
+		'prefer-const': 'error',
+		'eqeqeq': ['error', 'smart'],
+		'no-template-curly-in-string': 'error',
+		'default-param-last': ['error'],
+		'array-element-newline': ['error', 'consistent'],
+		'arrow-spacing': ['error'],
+		'block-spacing': ['error'],
+		'brace-style': ['error'],
+		'comma-dangle': 'off',
+		'comma-spacing': ['error'],
+		'function-call-argument-newline': ['error', 'consistent'],
+		'jsx-quotes': ['error', 'prefer-double'],
+		'key-spacing': ['error', { 'mode': 'strict' }],
+		'keyword-spacing': ['error'],
+		'no-multiple-empty-lines': ['error', { 'max': 1 }],
+		'no-trailing-spaces': ['error', { 'ignoreComments': true }],
+		'no-whitespace-before-property': ['error'],
+		'object-curly-newline': 'off',
+		'object-curly-spacing': ['error', 'always'],
+		'curly': ['error', 'multi-line'],
+		'operator-linebreak': 'off',
+		'rest-spread-spacing': ['error'],
+		'space-before-blocks': ['error'],
+		'space-before-function-paren': ['error', { 'anonymous': 'always', 'named': 'never', 'asyncArrow': 'always' }],
+		'space-in-parens': ['error', 'never'],
+		'space-infix-ops': ['error'],
+		'template-curly-spacing': ['error', 'never'],
+		'no-mixed-spaces-and-tabs': 'off',
+		'no-console': ['warn', { allow: ['error'] }],
+		'no-debugger': ['error'],
+	}
+};
